@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Grogin Grocery Store</title>
+</head>
+
+<body>
+
+    <!-- Violet Top Bar -->
+    <div class="top-bar">
+        <span>FREE delivery& 40% Discount for next 3 orders! Place your 1st order in.</span>
+        <span>Untill the end of the sale: 47 days 06 hours 52 minutes 13 sec.</span>
+    </div>
+
+    <!-- Entire Header Section -->
+    <header>
+        <div class="box-one">
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">My account</a></li>
+                <li><a href="#">Wishlist</a></li>
+                <span>We deliver to you every day from 7:00 to 23:00</span>
+            </ul>
+            <ul>
+                <li><a href="#">English <img src="./components/icons/list-icon.svg" class="arrow"></a></li>
+                <li><a href="#">USD <img src="./components/icons/list-icon.svg" class="arrow"></a></li>
+                <li><a href="#">Order Tracking</a></li>
+            </ul>
+        </div>
+        <hr />
+        <div class="box-two">
+            <img src="./components/icons/grogin-logo-dark.svg" alt="Grogin Logo">
+            <img src="./components/icons/location.svg" alt="location Logo">
+            <span>Deliver to all</span>
+            <div class="search-container">
+                <input type="text" placeholder="Search for products, categories or brands...">
+                <button type="submit">
+                    <img src="./components/icons/search.svg" alt="Search">
+                </button>
+            </div>
+            <a href="#"><img src="./components/icons/account-icon.svg" alt="Account"><span>Account</span></a>
+            <a href="#"><img src="./components/icons/heart-icon.svg" alt="Wishlist"><span>Wishlist</span></a>
+            <a href="#"><img src="./components/icons/cart.svg" alt="Your Cart"><span>Your Cart</span></a>
+        </div>
+        <hr />
+        <div class="box-three">
+            <ul>
+                <li><a href="#">Home <img src="./components/icons/list-icon.svg" class="arrow"></a></li>
+                <li><a href="#">Shop <img src="./components/icons/list-icon.svg" class="arrow"></a></li>
+                <li><a href="#">Beverages</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Trending Products <img src="./components/icons/list-icon.svg" class="arrow"></a></li>
+                <li><a href="#">Almost Finished <span>SALE</span> <img src="./components/icons/list-icon.svg" class="arrow"></a></li>
+            </ul>
+        </div>
+
+    </header>
+
+        <!-- Combined main section inside header -->
+        <div class="main-section">
+            <div class="filter-sidebar">
+                <h2>Widget price filter</h2>
+                <label for="min-price">Min price:</label>
+                <input type="number" id="min-price" placeholder="0">
+                <label for="max-price">Max price:</label>
+                <input type="number" id="max-price" placeholder="30">
+                <button>Filter</button>
+
+                <h3>Product Categories</h3>
+                <ul>
+                    <li><input type="checkbox" checked> Fruits & Vegetables</li>
+                    <li><input type="checkbox"> Baby & Pregnancy</li>
+                    <li><input type="checkbox"> Beverages</li>
+                    <li><input type="checkbox"> Meats & Seafood</li>
+                    <li><input type="checkbox"> Biscuits & Snacks</li>
+                    <li><input type="checkbox"> Breads & Bakery</li>
+                    <li><input type="checkbox"> Breakfast & Dairy</li>
+                    <li><input type="checkbox"> Frozen Foods</li>
+                </ul>
+            </div>
+
+            <div class="product-list">
+                <h1>Grocery store with different treasures</h1>
+                <div class="products">
+                    <div class="product-item">
+                        <img src="components/images/product1.jpg" alt="Yellow Potatoes">
+                        <h4>Yellow Potatoes Whole Fresh, 5lb Bag</h4>
+                        <p>$0.50 <span class="original-price">$1.98</span></p>
+                    </div>
+                    <div class="product-item">
+                        <img src="components/images/product2.jpg" alt="Large Bagged Oranges">
+                        <h4>Large Bagged Oranges</h4>
+                        <p>$0.89 <span class="original-price">$1.78</span></p>
+                    </div>
+                    <!-- Add more product items as needed -->
+                </div>
+            </div>
+        </div>
+
+    <footer>
+        <p>Join our newsletter for £10 offs</p>
+        <input type="email" placeholder="Enter your email address">
+        <button>Send</button>
+        <p>© 2024 Grogin. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

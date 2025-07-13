@@ -1,0 +1,210 @@
+/* ========== Global Reset & Base Styles ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+/* ========== General Tags ========== */
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+  color: #7e57c2;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+hr {
+  background-color: #eceff1;
+  height: 2px;
+  border: none;
+  margin: 0;
+}
+
+/* ========== Top Bar ========== */
+.top-bar {
+  background-color: #7e57c2;
+  color: white;
+  height: 20px;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 12px;
+}
+
+/* ========== Header Structure ========== */
+header {
+  width: 100%;
+  padding: 20px 0;
+}
+
+/* Box-One: Top Info Links & Text */
+.box-one {
+  color: #899499;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  font-size: 10px;
+}
+
+.box-one ul span {
+  margin-left: auto;
+  font-size: 10px;
+  color: #899499;
+}
+
+/* Box-Two: Logo, Location, Search, Icons */
+.box-two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px 0;
+  font-size: 12px;
+}
+
+.box-two a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+}
+
+.box-two a img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 3px;
+}
+
+/* Box-Three: Horizontal Link Sections */
+.box-three {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ========== Search Box ========== */
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #eceff1;
+  border-radius: 5px;
+  padding: 5px 10px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 10px;
+  font-size: 12px;
+  background-color: #eceff1;
+  color: #899499;
+}
+
+.search-container button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.search-container button img {
+  width: 20px;
+  height: 20px;
+}
+
+/* ========== Main Content ========== */
+.main-section {
+  display: flex;
+}
+
+.filter-sidebar {
+  width: 25%;
+  padding: 20px;
+  background-color: #e8e8f8;
+}
+
+.product-list {
+  width: 75%;
+  padding: 20px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.product-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: white;
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: red;
+}
+
+/* ========== Footer ========== */
+footer {
+  background-color: #4e5b7f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer input {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* ========== Inline Icon with Text ========== */
+.box-one a,
+.box-three a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.box-one a img,
+.box-three a img {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+}
