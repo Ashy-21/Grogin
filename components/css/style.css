@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+  color: #634c9f;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+hr {
+  background-color: #e5e7eb;
+  height: 2px;
+  border: none;
+  margin: 0;
+}
+
+.top-bar {
+  background-color: #634c9f;
+  color: white;
+  height: 20px;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 12px;
+}
+
+header {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.box-one {
+  color: #6b7280;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  padding: 10px 0 10px 0;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.box-one nav li a {
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.box-one ul span {
+  margin-left: auto;
+  font-size: 10px;
+  color: #6b7280;
+  align-self: center;
+  border-left: 1px solid #ccc;
+}
+
+.box-two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px 0;
+  font-size: 12px;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.box-two a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+}
+
+.box-two a img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 3px;
+}
+
+.box-three {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  padding: 15px 0;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.box-three a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.trend {
+  color: #e04141;
+  text-decoration: none;
+}
+
+.box-three span {
+  display: inline-block;
+  padding: 5px 10px;
+  background: linear-gradient(to right, #e04141, #ea580c);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.box-three span:hover,
+.box-three span:active,
+.box-three span:focus {
+  background: linear-gradient(to right, #e04141, #ea580c);
+  color: #fff;
+}
+
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #f3f4f6;
+  border-radius: 5px;
+  padding: 5px 10px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 10px;
+  font-size: 12px;
+  background: none;
+  color: #6b7280;
+}
+
+.search-container button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.search-container button img {
+  width: 20px;
+  height: 20px;
+}
+
+.box-four {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-style: 10px;
+  padding: 10px 0;
+}
+
+.box-four img{
+  transform: rotate(270deg);
+}
+
+aside {
+  width: 300px;
+  padding: 20px;
+}
+
+.price-filter-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.price-input {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.price-box {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Allows both boxes to grow equally */
+}
+
+.price-box label {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+input.price-input {
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%; /* Make input fill available space in price-box */
+  box-sizing: border-box;
+}
+
+.dash {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 18px;
+  margin-bottom: 4px; /* aligns the dash with the input text */
+}
+
+
+.slider-lookalike {
+  position: relative;
+  width: 100%;
+  height: 20px;
+}
+
+
+.slider-track {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: black;
+  transform: translateY(-50%);
+  border-radius: 3px;
+}
+
+.dot {
+  position: absolute;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  background-color: black;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.dot.left {
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.dot.right {
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
