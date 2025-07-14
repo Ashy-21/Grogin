@@ -227,7 +227,7 @@ aside {
 
 input.price-input {
   padding: 5px;
-  border: 1px solid #f3f4f6; /* Proper border */
+  border: 2px solid #f3f4f6; /* Proper border */
   background-color: #fff;
   border-radius: 5px;
   width: 100%;
@@ -336,22 +336,16 @@ input.price-input {
   margin-left: auto; /* Push to far right */
 }
 
-.filter-brand {
+.filter-color {
   border-bottom: 1px solid #e5e7eb;
 }
 
 .one {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-
-.one .label-group {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
 .green {
   width: 16px;
   height: 16px;
@@ -359,7 +353,113 @@ input.price-input {
   border-radius: 50%;
 }
 
-.one.grey {
+.two {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+}
+
+.grey {
   color: #6b7280;
-  margin-left: auto; /* Push to far right */
+}
+
+.filter-brand{
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.filter-brand .label-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.product-status {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.product-status ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product-status li {
+  display: flex;
+  align-items: center;
+  width: 100%; /* Ensure li spans full container width */
+}
+
+.product-status .label-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.product-status label {
+  font-size: 14px;
+  color: #000;
+}
+
+footer {
+  background-color: #f3f4f6;
+}
+
+.footer-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.join {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.left {}
+
+.right{}
+
+.middle {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.help ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.help li {
+  display: flex;
+  flex-direction: row;
+}
+
+.help li img {
+  width: 20px;
+  height: 20px;
+  margin-right: auto;
+}
+
+.help li .info {
+
+}
+
+.money ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  
+}
+
+footer a {
+  color: #6b7280;
+  text-decoration: none;
 }
