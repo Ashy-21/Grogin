@@ -75,34 +75,124 @@
     </header>
 
     <aside>
-    <div class="widget">
-        <h2>Widget price filter</h2>
+        <div class="price-filter-wrapper"></div>
 
-        <!-- Wrapper starts -->
-        <div class="price-filter-wrapper">
-        <div class="price-input">
-            <div class="price-box">
-            <label for="min-price">Min price</label>
-            <input type="number" id="min-price" class="price-input" placeholder="0" min="0">
+            <div class="widget">
+                <h3>Widget price filter</h3>
+                <div class="price-input">
+                    <div class="price-box">
+                    <label for="min-price">Min price</label>
+                    <input type="number" id="min-price" class="price-input" placeholder="0" min="0">
+                    </div>
+
+                    <span class="dash">-</span>
+
+                    <div class="price-box">
+                    <label for="max-price">Max price</label>
+                    <input type="number" id="max-price" class="price-input" placeholder="30" min="0">
+                    </div>
+                </div>
+
+                <div class="slider-lookalike">
+                    <div class="slider-track"></div>
+                    <div class="dot left"></div>
+                    <div class="dot right"></div>
+                </div>
+                <div class="filter">
+                    <span>Price: $0 - $30</span>
+                    <button type="button">Filter</button>
+                </div>
             </div>
 
-            <span class="dash">-</span>
-
-            <div class="price-box">
-            <label for="max-price">Max price</label>
-            <input type="number" id="max-price" class="price-input" placeholder="30" min="0">
+            <div class="product-category">
+                <h3>Product Categories</h3>
+                <ul>
+                    <li>
+                        <div class="label-group">
+                            <input type="checkbox" id="fruits-vegetables">
+                            <label for="fruits-vegetables">Fruits & Vegetables</label>
+                        </div>
+                        <img src="./components/icons/plus.svg" />
+                    </li>
+                    <li>
+                        <div class="label-group">
+                            <input type="checkbox" id="baby-pregnancy">
+                            <label for="baby-pregnancy">Baby & Pregnancy</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="label-group">
+                            <input type="checkbox" id="beverages">
+                            <label for="beverages">Beverages</label>
+                        </div>
+                        <img src="./components/icons/plus.svg" />
+                    </li>
+                    <li>
+                        <div class="label-group">
+                            <input type="checkbox" id="meats-seafood">
+                            <label for="meats-seafood">Meats & Seafood</label>
+                        </div>
+                        <img src="./components/icons/plus.svg" />
+                    </li>
+                    <li>
+                        <div class="label-group">
+                            <input type="checkbox" id="biscuits-snacks">
+                            <label for="biscuits-snacks">Biscuits & Snacks</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="label-group">
+                            <input type="checkbox" id="breads-bakery">
+                            <label for="breads-bakery">Breads & Bakery</label>
+                        </div>
+                        <img src="./components/icons/plus.svg" />
+                    </li>
+                    <li>
+                        <div class="label-group">
+                            <input type="checkbox" id="breakfast-dairy">
+                            <label for="breakfast-dairy">Breakfast & Diary</label>
+                        </div>
+                        <img src="./components/icons/plus.svg" />
+                    </li>
+                    <li>
+                        <div class="label-group">
+                            <input type="checkbox" id="frozen-foods">
+                            <label for="frozen-foods">Frozen Foods</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="label-group">
+                            <input type="checkbox" id="grocery-staples">
+                            <label for="grocery-staples">Grocery & Staples</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="label-group">
+                            <input type="checkbox" id="healthcare">
+                            <label for="healthcare">Healthcare</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="label-group">
+                            <input type="checkbox" id="household-needs">
+                            <label for="fruits-vegetables">Household Needs</label>
+                        </div>
+                    </li>
+                </ul>
             </div>
-        </div>
 
-        <div class="slider-lookalike">
-            <div class="slider-track"></div>
-            <div class="dot left"></div>
-            <div class="dot right"></div>
-        </div>
-        </div>
-        <!-- Wrapper ends -->
+            <div class="filter-brand">
+                <h3>Filter by Brands</h3>
+                <div class="one">
+                    <div class="label-group">
+                        <div class="green"></div>
+                        <span>Fresh</span>
+                    </div>
+                    <span class="grey">(1)</span>
+                </div>
+            </div>
 
-    </div>
+        </div>
     </aside>
 
 

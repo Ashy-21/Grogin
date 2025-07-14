@@ -204,6 +204,10 @@ aside {
   gap: 20px;
 }
 
+.widget {
+  border-bottom: 1px solid #e5e7eb;
+}
+
 .price-input {
   display: flex;
   align-items: flex-end;
@@ -213,20 +217,24 @@ aside {
 .price-box {
   display: flex;
   flex-direction: column;
-  flex: 1; /* Allows both boxes to grow equally */
+  flex: 1;
 }
 
 .price-box label {
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 4px;
 }
 
 input.price-input {
   padding: 5px;
+  border: 1px solid #f3f4f6; /* Proper border */
+  background-color: #fff;
   border-radius: 5px;
-  width: 100%; /* Make input fill available space in price-box */
+  width: 100%;
   box-sizing: border-box;
+  color: #f3f4f6; /* Text inside input */
 }
+
 
 .dash {
   display: flex;
@@ -276,3 +284,82 @@ input.price-input {
   transform: translate(50%, -50%);
 }
 
+.filter {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #000;
+}
+
+.filter button {
+  border: none;
+  background-color: #f3f4f6;
+  font-weight: 600;
+}
+
+.product-category {
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 10px;
+}
+
+.product-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product-category li {
+  display: flex;
+  align-items: center;
+  width: 100%; /* Ensure li spans full container width */
+}
+
+.product-category .label-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.product-category label {
+  font-size: 14px;
+  color: #000;
+}
+
+.product-category img {
+  width: 10px;
+  height: 10px;
+  margin-left: auto; /* Push to far right */
+}
+
+.filter-brand {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.one {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.one .label-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.green {
+  width: 16px;
+  height: 16px;
+  background-color: #81d742;
+  border-radius: 50%;
+}
+
+.one.grey {
+  color: #6b7280;
+  margin-left: auto; /* Push to far right */
+}
