@@ -268,19 +268,30 @@ input.price-input {
 .slider-lookalike {
   position: relative;
   width: 100%;
-  height: 20px;
+  max-width: 500px;
+  height: 40px;
+  margin: 50px auto;
 }
 
+.slider-lookalike {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 40px;
+  margin: 50px auto;
+  box-sizing: border-box;
+}
 
 .slider-track {
   position: absolute;
   top: 50%;
   left: 0;
-  width: 100%;
+  right: 0;
   height: 6px;
   background-color: black;
   transform: translateY(-50%);
   border-radius: 3px;
+  z-index: 1;
 }
 
 .dot {
@@ -288,20 +299,20 @@ input.price-input {
   top: 50%;
   width: 16px;
   height: 16px;
-  background-color: black;
-  border-radius: 50%;
   transform: translateY(-50%);
+  z-index: 2;
 }
 
+/* Position the left dot at the start of the track */
 .dot.left {
   left: 0;
-  transform: translate(-50%, -50%);
 }
 
+/* Position the right dot at the end of the track */
 .dot.right {
-  right: 0;
-  transform: translate(50%, -50%);
+  left: 50%;
 }
+
 
 .filter {
   padding: 10px 0;
@@ -483,7 +494,7 @@ main {
 main .items {
   border-radius: 5px;
   border: 1px solid #ccc;
-  padding: 10px;
+  padding: 1px;
 }
 
 main .items ul {
