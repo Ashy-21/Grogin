@@ -204,8 +204,7 @@ header {
   gap: 20px; /* Space between aside and main */
 }
 aside {
-  width: 300px; /* Fixed width for aside */
-  background-color: #f3f4f6; /* Background color for aside */
+  width: 300px;
   padding: 20px; /* Internal padding for aside */
 }
 
@@ -486,7 +485,7 @@ main .items li {
 }
 
 main .percent {
-  padding: 0 20px;
+  padding: 20px 20px 0 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -495,7 +494,37 @@ main .percent {
 main .percent p {
   color: #fff;
   padding: 2px 5px;
-  background-color: #e04141;
+  background-color: #dc2626;
+  border-radius: 10px;
+}
+
+main .organic {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+main .organic .left {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 10px;
+  background: linear-gradient(to right, #cdfa7e, #96e6a1);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 20px;
+}
+
+main .organic .right {
+  display: flex;
+  flex-direction: row;
+  background-color: #e6e6e6;
+  padding: 5px;
+  border-radius: 35%;
 }
 
 main .star {
@@ -511,7 +540,7 @@ main .prices {
 }
 
 main .buy {
-  padding: 0 20px;
+  padding: 0 20px 20px 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -523,7 +552,7 @@ main .buy img {
   align-content: center;
   padding: 8px;
   border-radius: 5px;
-  background-color: #81d742;
+  background-color: #16a34a;
 }
 
 footer {
