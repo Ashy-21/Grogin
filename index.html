@@ -11,33 +11,33 @@
 <body>
 
     <div class="top-bar">
-        <span>FREE delivery& 40% Discount for next 3 orders! Place your 1st order in.</span>
-        <span>Untill the end of the sale: 47 days 06 hours 52 minutes 13 sec.</span>
+        <p style="color: #fff; font-size: 12px;">FREE delivery& 40% Discount for next 3 orders! Place your 1st order in.</p>
+        <p style="font-size: 12px;color: #d0c9e2;">Untill the end of the sale: <span>47</span> days <span>06</span> hours <span>52</span> minutes <span>13</span> sec.</p>
     </div>
 
     <header>
         <div class="box-one">
             <nav>
                 <ul>
-                    <li><a href="#">About Us</a></li>
+                    <li style="margin-left: 20px;"><a href="#">About Us</a></li>
                     <li><a href="#">My account</a></li>
                     <li><a href="#">Wishlist</a></li>
-                    <span>We deliver to you every day from 7:00 to 23:00</span>
+                    <p>We deliver to you every day from <span style="color: #ea580c; font-weight: 600;">7:00 to 23:00</span></p>
                 </ul>
             </nav>
             <nav>
                 <ul>
                     <li><a href="#">English <img src="./components/icons/list-icon.svg" class="arrow"></a></li>
                     <li><a href="#">USD <img src="./components/icons/list-icon.svg" class="arrow"></a></li>
-                    <li><a href="#">Order Tracking</a></li>
+                    <li style="margin-right: 20px;"><a href="#">Order Tracking</a></li>
                 </ul>
             </nav>
         </div>
 
         <div class="box-two">
-            <img src="./components/icons/grogin-logo-dark.svg" alt="Grogin Logo">
-            <img src="./components/icons/location.svg" alt="location Logo">
-            <span>Deliver to<br>all</span>
+            <img src="./components/icons/grogin-logo-dark.svg" alt="Grogin Logo"  style="margin-left: 20px;"/>
+            <img src="./components/icons/location.svg" alt="location Logo" />
+            <p>Deliver to<br>all</p>
             <div class="search-container">
                 <input type="text" placeholder="Search for products, categories or brands...">
                 <button type="submit">
@@ -46,13 +46,13 @@
             </div>
             <a href="#"><img src="./components/icons/account-icon.svg" alt="Account"><span>Account</span></a>
             <a href="#"><img src="./components/icons/heart-icon.svg" alt="Wishlist"><span>Wishlist</span></a>
-            <a href="#"><img src="./components/icons/cart.svg" alt="Your Cart"><span>Your Cart</span></a>
+            <a href="#" style="margin-right: 20px;"><img src="./components/icons/cart.svg" alt="Your Cart"><span>Your Cart</span></a>
         </div>
 
         <div class="box-three">
             <nav>
                 <ul>
-                    <li><a href="#">Home <img src="./components/icons/list-icon.svg" class="arrow"></a></li>
+                    <li style="margin-left: 20px;"><a href="#">Home <img src="./components/icons/list-icon.svg" class="arrow"></a></li>
                     <li><a href="#">Shop <img src="./components/icons/list-icon.svg" class="arrow"></a></li>
                     <li><a href="#">Fruit & Vegetables</a></li>
                     <li><a href="#">Beverages</a></li>
@@ -63,18 +63,18 @@
             <nav>
                 <ul>
                     <li><a href="#">Trending Products <img src="./components/icons/list-icon.svg" class="arrow"></a></li>
-                    <li><a href="#" class="trend">Almost Finished <span>SALE</span> <img src="./components/icons/list-icon.svg" class="arrow"></a></li>
+                    <li style="margin-right: 20px;"><a href="#" class="trend">Almost Finished <span>SALE</span> <img src="./components/icons/list-icon.svg" class="arrow"></a></li>
                 </ul>
             </nav>
         </div>
         <div class="box-four">
-            <span>Home</span>
+            <p style="margin-left: 20px;">Home</p>
             <img src="./components/icons/list-icon.svg" />
-            <span>Shop</span>
+            <p style="margin-right: 20px;">Shop</p>
         </div>
     </header>
 
-    <div class="content-wrapper"> <!-- New wrapper div -->
+    <div class="content-wrapper">
         <aside>
             <div class="price-filter-wrapper">
 
@@ -775,10 +775,13 @@
                 </div>
                 <div class="right">
                     <div class="mail">
-                        <input type="email" placeholder="Enter your email address">
-                        <button>Send</button>
+                        <div class="input-wrapper">
+                            <img src="./components/icons/mail.svg" alt="email icon" class="icon" />
+                            <input type="email" placeholder="Enter your email address">
+                            <button type="submit">Send</button>
+                        </div>
                     </div>
-                    <p>By subscribing you agree to our <a href="#">Terms & Conditions and Privacy & Cookies policy.</a></p>
+                    <p class="disclaimer">By subscribing you agree to our <a href="#">Terms & Conditions and Privacy & Cookies policy.</a></p>
                 </div>
             </div>
             <div class="middle">
@@ -843,19 +846,20 @@
                 </div>
                 <div class="app">
                     <h3>Download our app</h3>
-                    <div class="app-wrapper"><div class="apps">
-                        <div class="discount">
-                            <img src="./components/icons/playstore.svg" />
-                            <span>Download App Get<br>-10% Discount</span>
+                    <div class="app-wrapper">
+                        <div class="apps">
+                            <div class="discount">
+                                <img src="./components/icons/playstore.svg" style="margin-right: 15px;" />
+                                <span>Download App Get<br>-10% Discount</span>
+                            </div>
+                            <div class="discount">
+                                <img src="./components/icons/appstore.svg" style="margin-right: 15px;" />
+                                <span>Download App Get<br>-20% Discount</span>
+                            </div>
                         </div>
-                        <div class="discount">
-                            <img src="./components/icons/appstore.svg" />
-                            <span>Download App Get<br>-20% Discount</span>
-                        </div>
-                    </div>
                     </div>
                     <div class="media">
-                        <p style="color: #000;">Follow us on social media:</p>
+                        <p style="color: #000;margin-bottom: 10px;">Follow us on social media:</p>
                         <div class="social">
                             <div class="image"><img src="./components/icons/facebook.svg" /></div>
                             <div class="image"><img src="./components/icons/twitter.svg" /></div>
@@ -867,7 +871,7 @@
             </div>
             <div class="bottom">
                 <div class="copy">
-                    <p>Copyright 2024 &copy; Grogin WooCommerce Wordpress Theme.All right reserved.Powered by KLBTheme.</p>
+                    <p>Copyright 2024 &copy; Grogin WooCommerce Wordpress Theme.All right reserved.Powered by <span style="color: #634c9f;">KLBTheme.</span></p>
                     <ul>
                         <li><a href="#" style="color: #000;">Terms and Conditions</a></li>
                         <li><a href="#" style="color: #000;">Privacy Policy</a></li>
@@ -875,9 +879,9 @@
                     </ul>
                 </div>
                 <div class="pay">
-                    <a href="#"><img src="./components/icons/visa.svg" /></a>
-                    <a href="#"><img src="./components/icons/paypal.svg" /></a>
-                    <a href="#"><img src="./components/icons/skrill.svg" /></a>
+                    <a href="#"><img src="./components/icons/visa.svg" style="margin-right: 10px;"/></a>
+                    <a href="#"><img src="./components/icons/paypal.svg" style="margin-right: 10px;"/></a>
+                    <a href="#"><img src="./components/icons/skrill.svg" style="margin-right: 10px;"/></a>
                     <a href="#"><img src="./components/icons/Klarna.svg" /></a>
                 </div>
             </div>
