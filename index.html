@@ -74,161 +74,578 @@
         </div>
     </header>
 
-    <aside>
-        <div class="price-filter-wrapper"></div>
+    <div class="content-wrapper"> <!-- New wrapper div -->
+        <aside>
+            <div class="price-filter-wrapper"></div>
 
-            <div class="widget">
-                <h3>Widget price filter</h3>
-                <div class="price-input">
-                    <div class="price-box">
-                    <label for="min-price">Min price</label>
-                    <input type="number" id="min-price" class="price-input" placeholder="0" min="0">
+                <div class="widget">
+                    <h3>Widget price filter</h3>
+                    <div class="price-input">
+                        <div class="price-box">
+                        <label for="min-price">Min price</label>
+                        <input type="number" id="min-price" class="price-input" placeholder="0" min="0">
+                        </div>
+
+                        <span class="dash">-</span>
+
+                        <div class="price-box">
+                        <label for="max-price">Max price</label>
+                        <input type="number" id="max-price" class="price-input" placeholder="30" min="0">
+                        </div>
                     </div>
 
-                    <span class="dash">-</span>
-
-                    <div class="price-box">
-                    <label for="max-price">Max price</label>
-                    <input type="number" id="max-price" class="price-input" placeholder="30" min="0">
+                    <div class="slider-lookalike">
+                        <div class="slider-track"></div>
+                        <div class="dot left"></div>
+                        <div class="dot right"></div>
+                    </div>
+                    <div class="filter">
+                        <span>Price: $0 - $30</span>
+                        <button type="button">Filter</button>
                     </div>
                 </div>
 
-                <div class="slider-lookalike">
-                    <div class="slider-track"></div>
-                    <div class="dot left"></div>
-                    <div class="dot right"></div>
+                <div class="product-category">
+                    <h3>Product Categories</h3>
+                    <ul>
+                        <li>
+                            <div class="label-group">
+                                <input type="checkbox" id="fruits-vegetables">
+                                <label for="fruits-vegetables">Fruits & Vegetables</label>
+                            </div>
+                            <img src="./components/icons/plus.svg" />
+                        </li>
+                        <li>
+                            <div class="label-group">
+                                <input type="checkbox" id="baby-pregnancy">
+                                <label for="baby-pregnancy">Baby & Pregnancy</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="label-group">
+                                <input type="checkbox" id="beverages">
+                                <label for="beverages">Beverages</label>
+                            </div>
+                            <img src="./components/icons/plus.svg" />
+                        </li>
+                        <li>
+                            <div class="label-group">
+                                <input type="checkbox" id="meats-seafood">
+                                <label for="meats-seafood">Meats & Seafood</label>
+                            </div>
+                            <img src="./components/icons/plus.svg" />
+                        </li>
+                        <li>
+                            <div class="label-group">
+                                <input type="checkbox" id="biscuits-snacks">
+                                <label for="biscuits-snacks">Biscuits & Snacks</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="label-group">
+                                <input type="checkbox" id="breads-bakery">
+                                <label for="breads-bakery">Breads & Bakery</label>
+                            </div>
+                            <img src="./components/icons/plus.svg" />
+                        </li>
+                        <li>
+                            <div class="label-group">
+                                <input type="checkbox" id="breakfast-dairy">
+                                <label for="breakfast-dairy">Breakfast & Diary</label>
+                            </div>
+                            <img src="./components/icons/plus.svg" />
+                        </li>
+                        <li>
+                            <div class="label-group">
+                                <input type="checkbox" id="frozen-foods">
+                                <label for="frozen-foods">Frozen Foods</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="label-group">
+                                <input type="checkbox" id="grocery-staples">
+                                <label for="grocery-staples">Grocery & Staples</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="label-group">
+                                <input type="checkbox" id="healthcare">
+                                <label for="healthcare">Healthcare</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="label-group">
+                                <input type="checkbox" id="household-needs">
+                                <label for="household-needs">Household Needs</label>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="filter">
-                    <span>Price: $0 - $30</span>
-                    <button type="button">Filter</button>
+
+                <div class="filter-color">
+                    <h3>Filter by Color</h3>
+                    <div class="one">
+                        <div class="two">
+                            <div class="green"></div>
+                            <span>Green</span>
+                        </div>
+                        <span class="grey">(1)</span>
+                    </div>
+                </div>
+
+                <div class="filter-brand">
+                    <h3>Filter by Brand</h3>
+                    <div class="one">
+                        <div class="label-group">
+                            <input type="checkbox" id="fresh">
+                            <label for="fresh">Fresh</label>
+                        </div>
+                        <span class="grey">(1)</span>
+                    </div>
+
+                </div>
+
+                <div class="product-status">
+                    <h3>Product Status</h3>
+                    <ul>
+                        <li>
+                            <div class="label-group">
+                                <input type="checkbox" id="in-stock">
+                                <label for="in-stock">In Stock</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="label-group">
+                                <input type="checkbox" id="on-sale">
+                                <label for="on-sale">On Sale</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </aside>
+
+        <main>
+            <div class="cross">
+                <img src="./components/icons/cross.svg" />
+                <p>Clear filters</p>
+                <img src="./components/icons/cross.svg" />
+                <p>Fruits & Vegetables</p>
+            </div>
+            <div class="banner">
+                <p>Only This Week</p>
+                <h1>Grocery store with different<br>treasures</h1>
+                <span>We have prepared special discounts for you on grocery<br>products...</span>
+                <button type="button">Shop Now<img src="./components/icons/arrow.svg" /></button>
+            </div>
+            <div class="results">
+                <p>Showing all 16 results</p>
+                <div class="right">
+                    <div class="sort">
+                        <p>Sort:</p>
+                        <a href="#" style="color: #000;">Sort by latest</a>
+                    </div>
+                    <div class="show">
+                        <p>Show:</p>
+                        <p style="color: #000;">20 Items</p>
+                    </div>
+                    <img src="./components/icons/widget.svg" />
+                    <img src="./components/icons/menu.svg" />
                 </div>
             </div>
-
-            <div class="product-category">
-                <h3>Product Categories</h3>
+            <div class="items">
                 <ul>
                     <li>
-                        <div class="label-group">
-                            <input type="checkbox" id="fruits-vegetables">
-                            <label for="fruits-vegetables">Fruits & Vegetables</label>
+                        <div class="percent">
+                            <p></p>
+                            <img src="./components/icons/heart-icon.svg" />
                         </div>
-                        <img src="./components/icons/plus.svg" />
-                    </li>
-                    <li>
-                        <div class="label-group">
-                            <input type="checkbox" id="baby-pregnancy">
-                            <label for="baby-pregnancy">Baby & Pregnancy</label>
+                        <img src="./components/images/" />
+                        <a href="#" style="color: #000;"></a>
+                        <div class="star">
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <p></p>
                         </div>
-                    </li>
-                    <li>
-                        <div class="label-group">
-                            <input type="checkbox" id="beverages">
-                            <label for="beverages">Beverages</label>
+                        <div class="prices">
+                            <p></p>
+                            <p><s></s></p>
                         </div>
-                        <img src="./components/icons/plus.svg" />
-                    </li>
-                    <li>
-                        <div class="label-group">
-                            <input type="checkbox" id="meats-seafood">
-                            <label for="meats-seafood">Meats & Seafood</label>
-                        </div>
-                        <img src="./components/icons/plus.svg" />
-                    </li>
-                    <li>
-                        <div class="label-group">
-                            <input type="checkbox" id="biscuits-snacks">
-                            <label for="biscuits-snacks">Biscuits & Snacks</label>
+                        <div class="buy">
+                            <img src="./components/icons/cart-white.svg" />
+                            <p>IN STOCK</p>
                         </div>
                     </li>
                     <li>
-                        <div class="label-group">
-                            <input type="checkbox" id="breads-bakery">
-                            <label for="breads-bakery">Breads & Bakery</label>
+                        <div class="percent">
+                            <p></p>
+                            <img src="./components/icons/heart-icon.svg" />
                         </div>
-                        <img src="./components/icons/plus.svg" />
-                    </li>
-                    <li>
-                        <div class="label-group">
-                            <input type="checkbox" id="breakfast-dairy">
-                            <label for="breakfast-dairy">Breakfast & Diary</label>
+                        <img src="./components/images/" />
+                        <a href="#" style="color: #000;"></a>
+                        <div class="star">
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <p></p>
                         </div>
-                        <img src="./components/icons/plus.svg" />
-                    </li>
-                    <li>
-                        <div class="label-group">
-                            <input type="checkbox" id="frozen-foods">
-                            <label for="frozen-foods">Frozen Foods</label>
+                        <div class="prices">
+                            <p></p>
+                            <p><s></s></p>
                         </div>
-                    </li>
-                    <li>
-                        <div class="label-group">
-                            <input type="checkbox" id="grocery-staples">
-                            <label for="grocery-staples">Grocery & Staples</label>
+                        <div class="buy">
+                            <img src="./components/icons/cart-white.svg" />
+                            <p>IN STOCK</p>
                         </div>
                     </li>
                     <li>
-                        <div class="label-group">
-                            <input type="checkbox" id="healthcare">
-                            <label for="healthcare">Healthcare</label>
+                        <div class="percent">
+                            <p></p>
+                            <img src="./components/icons/heart-icon.svg" />
+                        </div>
+                        <img src="./components/images/" />
+                        <a href="#" style="color: #000;"></a>
+                        <div class="star">
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <p></p>
+                        </div>
+                        <div class="prices">
+                            <p></p>
+                            <p><s></s></p>
+                        </div>
+                        <div class="buy">
+                            <img src="./components/icons/cart-white.svg" />
+                            <p>IN STOCK</p>
                         </div>
                     </li>
                     <li>
-                        <div class="label-group">
-                            <input type="checkbox" id="household-needs">
-                            <label for="household-needs">Household Needs</label>
+                        <div class="percent">
+                            <p></p>
+                            <img src="./components/icons/heart-icon.svg" />
+                        </div>
+                        <img src="./components/images/" />
+                        <a href="#" style="color: #000;"></a>
+                        <div class="star">
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <p></p>
+                        </div>
+                        <div class="prices">
+                            <p></p>
+                            <p><s></s></p>
+                        </div>
+                        <div class="buy">
+                            <img src="./components/icons/cart-white.svg" />
+                            <p>IN STOCK</p>
+                        </div>
+                    </li>
+                <li>
+                        <div class="percent">
+                            <p></p>
+                            <img src="./components/icons/heart-icon.svg" />
+                        </div>
+                        <img src="./components/images/" />
+                        <a href="#" style="color: #000;"></a>
+                        <div class="star">
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <p></p>
+                        </div>
+                        <div class="prices">
+                            <p></p>
+                            <p><s></s></p>
+                        </div>
+                        <div class="buy">
+                            <img src="./components/icons/cart-white.svg" />
+                            <p>IN STOCK</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="percent">
+                            <p></p>
+                            <img src="./components/icons/heart-icon.svg" />
+                        </div>
+                        <img src="./components/images/" />
+                        <a href="#" style="color: #000;"></a>
+                        <div class="star">
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <p></p>
+                        </div>
+                        <div class="prices">
+                            <p></p>
+                            <p><s></s></p>
+                        </div>
+                        <div class="buy">
+                            <img src="./components/icons/cart-white.svg" />
+                            <p>IN STOCK</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="percent">
+                            <p></p>
+                            <img src="./components/icons/heart-icon.svg" />
+                        </div>
+                        <img src="./components/images/" />
+                        <a href="#" style="color: #000;"></a>
+                        <div class="star">
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <p></p>
+                        </div>
+                        <div class="prices">
+                            <p></p>
+                            <p><s></s></p>
+                        </div>
+                        <div class="buy">
+                            <img src="./components/icons/cart-white.svg" />
+                            <p>IN STOCK</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="percent">
+                            <p></p>
+                            <img src="./components/icons/heart-icon.svg" />
+                        </div>
+                        <img src="./components/images/" />
+                        <a href="#" style="color: #000;"></a>
+                        <div class="star">
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <p></p>
+                        </div>
+                        <div class="prices">
+                            <p></p>
+                            <p><s></s></p>
+                        </div>
+                        <div class="buy">
+                            <img src="./components/icons/cart-white.svg" />
+                            <p>IN STOCK</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="percent">
+                            <p></p>
+                            <img src="./components/icons/heart-icon.svg" />
+                        </div>
+                        <img src="./components/images/" />
+                        <a href="#" style="color: #000;"></a>
+                        <div class="star">
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <p></p>
+                        </div>
+                        <div class="prices">
+                            <p></p>
+                            <p><s></s></p>
+                        </div>
+                        <div class="buy">
+                            <img src="./components/icons/cart-white.svg" />
+                            <p>IN STOCK</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="percent">
+                            <p></p>
+                            <img src="./components/icons/heart-icon.svg" />
+                        </div>
+                        <img src="./components/images/" />
+                        <a href="#" style="color: #000;"></a>
+                        <div class="star">
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <p></p>
+                        </div>
+                        <div class="prices">
+                            <p></p>
+                            <p><s></s></p>
+                        </div>
+                        <div class="buy">
+                            <img src="./components/icons/cart-white.svg" />
+                            <p>IN STOCK</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="percent">
+                            <p></p>
+                            <img src="./components/icons/heart-icon.svg" />
+                        </div>
+                        <img src="./components/images/" />
+                        <a href="#" style="color: #000;"></a>
+                        <div class="star">
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <p></p>
+                        </div>
+                        <div class="prices">
+                            <p></p>
+                            <p><s></s></p>
+                        </div>
+                        <div class="buy">
+                            <img src="./components/icons/cart-white.svg" />
+                            <p>IN STOCK</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="percent">
+                            <p></p>
+                            <img src="./components/icons/heart-icon.svg" />
+                        </div>
+                        <img src="./components/images/" />
+                        <a href="#" style="color: #000;"></a>
+                        <div class="star">
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <p></p>
+                        </div>
+                        <div class="prices">
+                            <p></p>
+                            <p><s></s></p>
+                        </div>
+                        <div class="buy">
+                            <img src="./components/icons/cart-white.svg" />
+                            <p>IN STOCK</p>
+                        </div>
+                    </li>
+                <li>
+                        <div class="percent">
+                            <p></p>
+                            <img src="./components/icons/heart-icon.svg" />
+                        </div>
+                        <img src="./components/images/" />
+                        <a href="#" style="color: #000;"></a>
+                        <div class="star">
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <p></p>
+                        </div>
+                        <div class="prices">
+                            <p></p>
+                            <p><s></s></p>
+                        </div>
+                        <div class="buy">
+                            <img src="./components/icons/cart-white.svg" />
+                            <p>IN STOCK</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="percent">
+                            <p></p>
+                            <img src="./components/icons/heart-icon.svg" />
+                        </div>
+                        <img src="./components/images/" />
+                        <a href="#" style="color: #000;"></a>
+                        <div class="star">
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <p></p>
+                        </div>
+                        <div class="prices">
+                            <p></p>
+                            <p><s></s></p>
+                        </div>
+                        <div class="buy">
+                            <img src="./components/icons/cart-white.svg" />
+                            <p>IN STOCK</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="percent">
+                            <p></p>
+                            <img src="./components/icons/heart-icon.svg" />
+                        </div>
+                        <img src="./components/images/" />
+                        <a href="#" style="color: #000;"></a>
+                        <div class="star">
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <p></p>
+                        </div>
+                        <div class="prices">
+                            <p></p>
+                            <p><s></s></p>
+                        </div>
+                        <div class="buy">
+                            <img src="./components/icons/cart-white.svg" />
+                            <p>IN STOCK</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="percent">
+                            <p></p>
+                            <img src="./components/icons/heart-icon.svg" />
+                        </div>
+                        <img src="./components/images/" />
+                        <a href="#" style="color: #000;"></a>
+                        <div class="star">
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <img src="./components/icons/star.svg" />
+                            <p></p>
+                        </div>
+                        <div class="prices">
+                            <p></p>
+                            <p><s></s></p>
+                        </div>
+                        <div class="buy">
+                            <img src="./components/icons/cart-white.svg" />
+                            <p>IN STOCK</p>
                         </div>
                     </li>
                 </ul>
             </div>
-
-            <div class="filter-color">
-                <h3>Filter by Color</h3>
-                <div class="one">
-                    <div class="two">
-                        <div class="green"></div>
-                        <span>Green</span>
-                    </div>
-                    <span class="grey">(1)</span>
-                </div>
-            </div>
-
-            <div class="filter-brand">
-                <h3>Filter by Brand</h3>
-                <div class="one">
-                    <div class="label-group">
-                        <input type="checkbox" id="fresh">
-                        <label for="fresh">Fresh</label>
-                    </div>
-                    <span class="grey">(1)</span>
-                </div>
-
-            </div>
-
-            <div class="product-status">
-                <h3>Product Status</h3>
-                <ul>
-                    <li>
-                        <div class="label-group">
-                            <input type="checkbox" id="in-stock">
-                            <label for="in-stock">In Stock</label>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="label-group">
-                            <input type="checkbox" id="on-sale">
-                            <label for="on-sale">On Sale</label>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-    </aside>
+        </main>
+    </div>
 
 
-
-
-    <main></main>
 
     <footer>
         <div class="footer-container">
@@ -265,69 +682,70 @@
                             </div>
                         </li>
                     </ul>
-            </div>
-            <div class="money">
-                <h3>Make Money with Us</h3>
-                <ul>
-                    </li><a href="#">Sell on Grogin</a></li>
-                    </li><a href="#">Sell Your Services on Grogin</a></li>
-                    </li><a href="#">Sell on Grogin Business</a></li>
-                    </li><a href="#">Sell Your Apps on Grogin</a></li>
-                    </li><a href="#">Become an Affilate</a></li>
-                    </li><a href="#">Advertise Your Produts</a></li>
-                    </li><a href="#">Sell-publish with Us</a></li>
-                    </li><a href="#">Become an Blowwe Vendor</a></li>
-                </ul>
-            </div>
-            <div class="help">
-                <h3>Let us Help You</h3>
-                <ul>
-                    <li><a href="#">Accessibility Statement</a></li>
-                    <li><a href="#">Your Orders</a></li>
-                    <li><a href="#">Returns & Replacements</a></li>
-                    <li><a href="#">Shipping Rates & Policies</a></li>
-                    <li><a href="#">Refund and returns Policy</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms and Conditions</a></li>
-                    <li><a href="#">Cookie Settings</a></li>
-                    <li><a href="#">Help Center</a></li>
-                </ul>
-            </div>
-            <div class="know">
-                <h3>Get to Know Us</h3>
-                <ul>
-                    <li><a href="#">Careers for Grogin</a></li>
-                    <li><a href="#">About Grogin</a></li>
-                    <li><a href="#">Investor Relations</a></li>
-                    <li><a href="#">Grogin Devices</a></li>
-                    <li><a href="#">Customer reviews</a></li>
-                    <li><a href="#">Social Responsibility</a></li>
-                    <li><a href="#">Store Locations</a></li>
-                </ul>
-            </div>
-            <div class="app">
-                <h3>Download our app</h3>
-                <div class="apps">
-                    <div class="discount">
-                        <img src="./components/icons/playstore.svg" />
-                        <span>Download App Get<br>-10% Discount</span>
+                </div>
+                <div class="money">
+                    <h3>Make Money with Us</h3>
+                    <ul>
+                        </li><a href="#">Sell on Grogin</a></li>
+                        </li><a href="#">Sell Your Services on Grogin</a></li>
+                        </li><a href="#">Sell on Grogin Business</a></li>
+                        </li><a href="#">Sell Your Apps on Grogin</a></li>
+                        </li><a href="#">Become an Affilate</a></li>
+                        </li><a href="#">Advertise Your Produts</a></li>
+                        </li><a href="#">Sell-publish with Us</a></li>
+                        </li><a href="#">Become an Blowwe Vendor</a></li>
+                    </ul>
+                </div>
+                <div class="help">
+                    <h3>Let us Help You</h3>
+                    <ul>
+                        <li><a href="#">Accessibility Statement</a></li>
+                        <li><a href="#">Your Orders</a></li>
+                        <li><a href="#">Returns & Replacements</a></li>
+                        <li><a href="#">Shipping Rates & Policies</a></li>
+                        <li><a href="#">Refund and returns Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Cookie Settings</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="know">
+                    <h3>Get to Know Us</h3>
+                    <ul>
+                        <li><a href="#">Careers for Grogin</a></li>
+                        <li><a href="#">About Grogin</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Grogin Devices</a></li>
+                        <li><a href="#">Customer reviews</a></li>
+                        <li><a href="#">Social Responsibility</a></li>
+                        <li><a href="#">Store Locations</a></li>
+                    </ul>
+                </div>
+                <div class="app">
+                    <h3>Download our app</h3>
+                    <div class="app-wrapper"><div class="apps">
+                        <div class="discount">
+                            <img src="./components/icons/playstore.svg" />
+                            <span>Download App Get<br>-10% Discount</span>
+                        </div>
+                        <div class="discount">
+                            <img src="./components/icons/appstore.svg" />
+                            <span>Download App Get<br>-20% Discount</span>
+                        </div>
                     </div>
-                    <div class="discount">
-                        <img src="./components/icons/appstore.svg" />
-                        <span>Download App Get<br>-20% Discount</span>
+                    </div>
+                    <div class="media">
+                        <p style="color: #000;">Follow us on social media:</p>
+                        <div class="social">
+                            <div class="image"><img src="./components/icons/facebook.svg" /></div>
+                            <div class="image"><img src="./components/icons/twitter.svg" /></div>
+                            <div class="image"><img src="./components/icons/instagram.svg" /></div>
+                            <div class="image"><img src="./components/icons/linkedin.svg" /></div>
+                        </div>
                     </div>
                 </div>
-                <div class="media">
-                    <p style="color: #000;">Follow us on social media:</p>
-                    <div class="social">
-                        <div class="image"><img src="./components/icons/facebook.svg" /></div>
-                        <div class="image"><img src="./components/icons/twitter.svg" /></div>
-                        <div class="image"><img src="./components/icons/instagram.svg" /></div>
-                        <div class="image"><img src="./components/icons/linkedin.svg" /></div>
-                    </div>
-                </div>
             </div>
-
             <div class="bottom">
                 <div class="copy">
                     <p>Copyright 2024 &copy; Grogin WooCommerce Wordpress Theme.All right reserved.Powered by KLBTheme.</p>
@@ -344,10 +762,7 @@
                     <a href="#"><img src="./components/icons/Klarna.svg" /></a>
                 </div>
             </div>
-
         </div>
-
     </footer>
-
 </body>
 </html>
