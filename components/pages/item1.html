@@ -115,9 +115,19 @@
                         <p style="color: #7d838d;font-size: 12px;">Remains until the end of the offer.</p>
                     </div>
                     <div class="add-buy">
-                        <input type="email" placeholder="Enter your email address">
-                        <button type="submit">Add to cart</button>
-                        <button type="submit">Buy Now</button>
+                        <div class="quantity-input">
+                            <span class="minus">−</span>
+                            <input type="number" value="1" readonly />
+                            <span class="plus">+</span>
+                        </div>
+                        <button class="btn green">
+                            <img src="../icons/cart-white.svg" alt="Cart Icon" />
+                            Add to cart
+                        </button>
+                        <button class="btn black">
+                            <img src="../icons/cart-white.svg" alt="Cart Icon" />
+                            Buy Now
+                        </button>
                     </div>
                     <div class="pay-war">
                         <div class="payment1">
@@ -130,24 +140,31 @@
                         </div>
                     </div>
                     <div class="menu-three">
-                        <img src="../icons/heart-icon.svg" />
-                        <span>Add to wishlist</span>
-                        <img src="../icons/upload.svg" />
-                        <span>Share this Product</span>
-                        <img src="../icons/compare.svg" />
-                        ,<span>Compare</span>
+                        <div class="menu-item">
+                            <img src="../icons/heart-icon.svg" alt="Wishlist" />
+                            <span>Add to wishlist</span>
+                        </div>
+                        <div class="menu-item">
+                            <img src="../icons/upload.svg" alt="Share" />
+                            <span>Share this Product</span>
+                        </div>
+                        <div class="menu-item">
+                            <img src="../icons/compare.svg" alt="Compare" />
+                            <span>Compare</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="iem-descriptiontop">
+            <div class="item-descriptiontop">
                 <a href="#" class="clicked">Description</a>
                 <a href="#">Reviews(2)</a>
             </div>
-            <div class="iem-descriptionbottom">
-                <p>Quisque varius diam vel metus mattis, id aliquam diam rhoncus. Proin vitae magna in dui finibus malesuada et at nulla. Morbi elit ex, viverra vitae ante vel, blandit feugiat ligula. Fusce<br>fermentum iaculis nibh, at sodales leo maximus a. Nullam ultricies sodales nunc, in pellentesque lorem mattis quis. Cras imperdiet est in nunc tristique lacinia. Nullam aliquam mauris eu<br>accumsan tincidunt. Suspendisse velit ex, aliquet vel ornare vel, dignissim a tortor.<br>Morbi ut sapien vitae odio accumsan gravida. Morbi vitae erat auctor, eleifend nunc a, lobortis neque. Praesent aliquam dignissim viverra. Maecenas lacus odio, feugiat eu nunc sit amet,<br>maximus sagittis dolor. Vivamus nisi sapien, elementum sit amet eros sit amet, ultricies cursus ipsum. Sed consequat luctus ligula. Curabitur laoreet rhoncus blandit. Aenean vel diam ut<br>arcu pharetra dignissim ut sed leo. Vivamus faucibus, ipsum in vestibulum vulputate, lorem orci convallis quam, sit amet consequat nulla felis pharetra lacus. Duis semper erat mauris, sed<br>egestas purus commodo vel.</p>
+            <div class="item-descriptionbottom">
+                <p>Quisque varius diam vel metus mattis, id aliquam diam rhoncus. Proin vitae magna in dui finibus malesuada et at nulla. Morbi elit ex, viverra vitae ante vel, blandit feugiat ligula. Fusce fermentum iaculis nibh, at sodales leo maximus a. Nullam ultricies sodales nunc, in pellentesque lorem mattis quis. Cras imperdiet est in nunc tristique lacinia. Nullam aliquam mauris eu accumsan tincidunt. Suspendisse velit ex, aliquet vel ornare vel, dignissim a tortor.<br>Morbi ut sapien vitae odio accumsan gravida. Morbi vitae erat auctor, eleifend nunc a, lobortis neque. Praesent aliquam dignissim viverra. Maecenas lacus odio, feugiat eu nunc sit amet, maximus sagittis dolor. Vivamus nisi sapien, elementum sit amet eros sit amet, ultricies cursus ipsum. Sed consequat luctus ligula. Curabitur laoreet rhoncus blandit. Aenean vel diam ut arcu pharetra dignissim ut sed leo. Vivamus faucibus, ipsum in vestibulum vulputate, lorem orci convallis quam, sit amet consequat nulla felis pharetra lacus. Duis semper erat mauris, sed egestas purus commodo vel.</p>
             </div>
-            <div class="item-related">
-                <h3>Related Products</h3>
+            <h3 style="padding-bottom: 10px;">Related Products</h3>
+            <div class="items">
+                
                 <ul>
                     <li>
                         <div class="percent">
