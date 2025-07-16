@@ -68,7 +68,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-size: 14px;
+  font-size: 12px;
   padding: 10px 0 10px 0;
   border-bottom: 2px solid #e5e7eb;
 }
@@ -78,6 +78,7 @@ header {
   font-weight: 400;
   margin-right: 10px;
   display: flex;
+  font-weight: 600;
   flex-direction: row;
 }
 
@@ -116,6 +117,16 @@ header {
   margin-bottom: 3px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
 .box-three {
   display: flex;
   justify-content: space-between;
@@ -123,18 +134,42 @@ header {
   font-size: 16px;
   padding: 15px 0;
   border-bottom: 2px solid #e5e7eb;
+  position: relative;
+}
+
+.box-three nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
 }
 
 .box-three a {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-weight: 600;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.box-three a:hover {
+  transform: translateY(-2px);
+  color: #634c9f;
+  text-decoration: underline;
+  text-decoration-color: #634c9f;
+  text-underline-offset: 25px;
+}
+
+.box-three a.clicked {
+  color: #634c9f;
+  text-decoration: underline;
+  text-decoration-color: #634c9f;
+  text-underline-offset: 25px;
 }
 
 .trend {
   color: #e04141;
-  text-decoration: none;
 }
 
 .box-three span {
@@ -156,8 +191,6 @@ header {
   background: linear-gradient(to right, #e04141, #ea580c);
   color: #fff;
 }
-
-
 .search-container {
   display: flex;
   align-items: center;
@@ -216,6 +249,10 @@ aside {
   padding-right: 20px;
 }
 
+aside h3 {
+  margin-bottom: 20px;
+}
+
 .price-filter-wrapper {
   display: flex;
   flex-direction: column;
@@ -245,15 +282,14 @@ aside {
 }
 
 input.price-input {
-  padding: 5px;
-  border: 2px solid #f3f4f6;
+  padding: 10px;
+  border: 2px solid #d1d5db;
   background-color: #fff;
   border-radius: 5px;
   width: 100%;
   box-sizing: border-box;
-  color: #f3f4f6;
+  color: #000;
 }
-
 
 .dash {
   display: flex;
@@ -264,21 +300,20 @@ input.price-input {
   margin-bottom: 4px;
 }
 
-
 .slider-lookalike {
   position: relative;
   width: 100%;
   max-width: 500px;
-  height: 40px;
-  margin: 50px auto;
+  height: 20px;
+  margin: 20px auto;
 }
 
 .slider-lookalike {
   position: relative;
   width: 100%;
   max-width: 500px;
-  height: 40px;
-  margin: 50px auto;
+  height: 20px;
+  margin: 20px auto;
   box-sizing: border-box;
 }
 
@@ -303,12 +338,10 @@ input.price-input {
   z-index: 2;
 }
 
-/* Position the left dot at the start of the track */
 .dot.left {
   left: 0;
 }
 
-/* Position the right dot at the end of the track */
 .dot.right {
   left: 50%;
 }
@@ -317,6 +350,7 @@ input.price-input {
 .filter {
   padding: 10px 0;
   display: flex;
+  margin-bottom: 20px;
   justify-content: space-between;
   align-items: center;
   font-size: 14px;
@@ -325,11 +359,17 @@ input.price-input {
 
 .filter button {
   border: none;
-  background-color: #f3f4f6;
-  font-weight: 600;
+  background-color: #e5e7eb;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .product-category {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   border-bottom: 1px solid #e5e7eb;
   padding-bottom: 10px;
 }
@@ -337,7 +377,7 @@ input.price-input {
 .product-category ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -367,7 +407,11 @@ input.price-input {
 }
 
 .filter-color {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 10px;
 }
 
 .one {
@@ -375,6 +419,7 @@ input.price-input {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-bottom: 20px;
 }
 .green {
   width: 16px;
@@ -396,7 +441,11 @@ input.price-input {
 }
 
 .filter-brand{
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 10px;
 }
 
 .filter-brand .label-group {
@@ -406,7 +455,11 @@ input.price-input {
 }
 
 .product-status {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 10px;
 }
 
 .product-status ul {
@@ -416,6 +469,7 @@ input.price-input {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  margin-bottom: 20px;
 }
 
 .product-status li {
@@ -444,7 +498,7 @@ main {
   display: flex;
   flex-direction: row;
   align-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-size: 12;
 }
 
@@ -458,41 +512,119 @@ main {
 
 .banner {
   width: 100%;
-  height: max-content;
+  height: 300px;
   background: url("../images/banner.jpg") no-repeat center center;
   background-size: cover;
-  padding: 20px;
+  padding: 40px;
   border-radius: 8px;
   color: #000;
   margin-bottom: 10px;
 }
 
+.banner span {
+  padding: 5px 8px;
+  font-weight: 600;
+  border-radius: 15px;
+  font-size: 12px;
+  color: #7c2d12;
+  background-color: #ffedd5;
+}
+
+.banner h1 {
+  margin: 20px 0 20px 0;
+  font-weight: 600;
+}
+
+.banner p {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.shop-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 10px;
+  border: 1.5px solid #eff0f4;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+}
+
+.shop-button img {
+  width: 16px;
+  height: 16px;
+}
+
+.shop-button:hover {
+  transform: translateY(-2px);
+  border-color: #6b7280;
+  color: #111827;
+}
+
+.shop-button:active {
+  transform: translateY(0);
+  border-color: #4b5563;
+}
+
+
 .results {
+  font-size: 14px;
   display: flex;
   flex-direction: row;
-  padding: 20px;
+  padding: 0 20px 0 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
   background-color: #f3f4f6;
   color: #6b7280;
   border-radius: 5px;
-  margin-bottom: 10px;
 }
 
 .results .right {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .results .right .sort {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .results .right .show {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.show-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  gap: 8px;
+}
+.menu-block {
+  display: inline-block;
+  padding: 10px;
+  background-color: #d1d5db;
+  border: none;
+  border-radius: 5px;
 }
 
 main .items {
+  margin-top: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
   padding: 1px;
@@ -558,32 +690,28 @@ main .organic {
   min-height: 40px;
 }
 
-/* Left badge */
 main .organic .left {
   display: flex;
   align-items: center;
-  justify-content: center; /* or space-between if you want gap between icon and text */
+  justify-content: center;
   background: linear-gradient(to right, #cdfa7e, #96e6a1);
   padding: 5px 20px;
-  height: 24px; /* Controls vertical size of the gradient box */
+  height: 24px;
   border-radius: 15px;
   font-size: 12px;
   font-weight: bold;
   line-height: 1;
-  min-width: 60px; /* Ensures it takes up space even if empty */
+  min-width: 60px;
   box-sizing: border-box;
-  gap: 5px; /* space between icon and text */
+  gap: 5px;
 }
 
-
-/* Even if empty, .right should stay on the right */
 main .organic .right {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  min-width: 16px; /* or same width as icon if fixed size */
+  min-width: 16px;
 }
-
 
 main .items li a {
   color: #000;
@@ -629,7 +757,7 @@ main .buy {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: auto;
+  margin-top: 10px;
 }
 
 main .buy img {
