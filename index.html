@@ -44,16 +44,28 @@
                 </button>
             </div>
             <a href="#"><img src="./components/icons/account-icon.svg" alt="Account"><span>Account</span></a>
-            <a href="#"><img src="./components/icons/heart-icon.svg" alt="Wishlist"><span>Wishlist</span></a>
-            <a href="#" style="margin-right: 20px;"><img src="./components/icons/cart.svg" alt="Your Cart"><span>Your Cart</span></a>
+            <a href="#">
+                <div class="icon-badge">
+                    <img src="./components/icons/heart-icon.svg" alt="Wishlist">
+                    <span class="badge">0</span>
+                </div>
+                <span>Wishlist</span>
+            </a>
+            <a href="#" style="margin-right: 20px;">
+                <div class="icon-badge">
+                    <img src="./components/icons/cart.svg" alt="Your Cart">
+                    <span class="badge">0</span>
+                </div>
+                <span>Your Cart</span>
+            </a>
         </div>
 
         <div class="box-three">
             <nav>
                 <ul>
                     <li style="margin-left: 20px;"><a href="#">Home <img src="./components/icons/list-icon.svg" class="arrow"></a></li>
-                    <li><a href="#">Shop <img src="./components/icons/list-icon.svg" class="arrow"></a></li>
-                    <li><a href="#">Fruit & Vegetables</a></li>
+                    <li><a href="#" class="active">Shop <img src="./components/icons/list-icon.svg" class="arrow"></a></li>
+                    <li><a href="#" class="active">Fruit & Vegetables</a></li>
                     <li><a href="#">Beverages</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Contact</a></li>
@@ -109,7 +121,8 @@
                     <ul>
                         <li>
                             <div class="label-group">
-                                <input type="checkbox" id="fruits-vegetables">
+                                <input type="checkbox" id="fruits-vegetables" checked>
+
                                 <label for="fruits-vegetables">Fruits & Vegetables</label>
                             </div>
                             <img src="./components/icons/plus.svg" />
